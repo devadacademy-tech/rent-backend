@@ -7,6 +7,7 @@ const connectDB = require("./config/db");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const startReminderCron = require("./jobs/reminderCron");
 
+
 const authRoutes = require("./routes/authRoutes");
 const tenantRoutes = require("./routes/tenantRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
