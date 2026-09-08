@@ -20,10 +20,10 @@ const tenantSchema = new mongoose.Schema(
     },
     name: { type: String, required: true, trim: true },
     email: { type: String, trim: true, lowercase: true, default: "" },
-    phone: { type: String, required: true, trim: true },
-    propertyAddress: { type: String, required: true, trim: true },
+    phone: { type: String, trim: true,   default: ""},
+    propertyAddress: { type: String, trim: true,   default: "" },
     unitNumber: { type: String, trim: true, default: "" },
-    rentAmount: { type: Number, required: true, min: 0 },
+    rentAmount: { type: Number, min: 0,   default: 0 },
     currency: { type: String, default: "NGN" },
     rentStartDate: { type: Date, required: true },
     rentExpiryDate: { type: Date, required: true }, // next date rent is due/expires
