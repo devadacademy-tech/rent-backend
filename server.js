@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV !== "test") app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.json({ success: true, message: "Tenant Rent Reminder API is running" });
+  res.json({ success: true, message: "Rent Reminder API is running" });
 });
 
 app.use("/api/auth", authRoutes);
